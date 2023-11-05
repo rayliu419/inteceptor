@@ -1,0 +1,2 @@
+org.example.interceptor.ThirdLibLogInterceptor
+org.example.postbeanprocessor.RestTemplateProcessor

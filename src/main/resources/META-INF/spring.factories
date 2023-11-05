@@ -1,0 +1,2 @@
+# 让第三方Bean生效的第三种方法：在第三方库的spring.factories里配置，会使的spring boot程序自动初始化三方库的Bean，无侵入修改。但是还没调通
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=org.example.config.ExportLibConfig

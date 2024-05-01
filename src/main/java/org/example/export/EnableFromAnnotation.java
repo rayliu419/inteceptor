@@ -10,6 +10,8 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
+// 外部需要此jar中的Bean时，在@SpringBootApplication下面@ExportFromAnnotationConfig
+// 外部程序在倒入此注解时，会load ExportFromAnnotationConfig.clas
 @Import(ExportFromAnnotationConfig.class)
 public @interface EnableFromAnnotation {
 }
